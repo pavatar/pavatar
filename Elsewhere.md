@@ -10,7 +10,27 @@ http://factoryjoe.com/blog/2007/04/21/raising-the-standard-for-avatars/
 
 * http://relogo.org – für Logos
 
+
+
+* http://web.archive.org/web/20090207185045/http://www.apparently.me.uk/8714.html
+
+* http://plugins.trac.wordpress.org/wiki/favatars
+
+
+# In Verbindung mit Auth/ID-Protokollen:
+
+* OpenID spezifiziert ein Attribute Exchange bei Login, was auch Attribute wie http://openid.net/schema/media/image beinhaltet.
+  Wird nur kaum genutzt, anscheinend.
+  http://openid.net/specs/openid-attribute-properties-list-1_0-01.html
+
 * Delegation auf große Identity Provider wie Google, Twitter, Facebook, automatisch durch Links:
 http://microformats.org/wiki/RelMeAuth
 https://support.google.com/webmasters/answer/1408986
 
+
+
+# Zentralisiertes:
+
+* http://avatars.io
+* http://claimedavatar.net
+* http://paulisageek.com/openidavatar/
