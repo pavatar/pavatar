@@ -19,7 +19,7 @@ http://factoryjoe.com/blog/2007/04/21/raising-the-standard-for-avatars/
 
 
 * Für RDF-Nerds: Fingerpoint ist ähnlich wie Webfinger, nur das der Endpunkt ein SPARQL-Endpoint war, den man in dieser Query-Sprache für RDF anspricht und RDF zurück bekommt. Hier vermutlich im FOAF-Vokabular, welches auch ein img-property besitzt.
-
+http://buzzword.org.uk/2009/fingerpoint/spec-in.html
 
 
 
