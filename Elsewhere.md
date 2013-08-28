@@ -5,6 +5,10 @@ Man soll die Zielseite parsen und einen entsprechenden Wert aus der hCards nehme
 
 * http://webfinger.net/rel/avatar
 
+(Generell sind die Überlegungen hinter Webfinger die gleichen, wie hinter einem Pavatar-Protokoll. Deswegen ist das hier lesenswert
+https://docs.google.com/document/d/1Yr00Tr5d71-E6x7VDtmEaC48SendGWQe7XcY99pjQWs/edit?pli=1 )
+
+
 * Chris Messina will die Favicon-Route gehen:
 http://factoryjoe.com/blog/2007/04/21/raising-the-standard-for-avatars/
 
