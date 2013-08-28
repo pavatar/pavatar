@@ -1,3 +1,5 @@
+![Yes, we know](standards.png)
+
 # Pavatar
 The Personal Avatar (aka Pavatar) is a personal picture hosted on **your** webspace which is then used by websites to display whenever referring to content provided by **YOU**, the user. An example would be if you made a comment or a site posting where an avatar is required. This way, delivering your Personal Avatar is peripheral and can be (nearly) anonymous. This option inhibits companies from collecting personal information about your habits on the web.
 
