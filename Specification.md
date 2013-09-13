@@ -56,7 +56,7 @@ Comments are welcome, please write to <spec@pavatar.com>.
 : A providers website must be a valid HTTP URL according to [RFC 1738](http://www.faqs.org/rfcs/rfc1738.html), which the provider has specified as his website.
 
 **Personal Avatar**
-: A Personal Avatar is a picture stored on the provider's website conforming to the Personal Avatar conformance requirements described in [2][conformance-requirements].
+: A Personal Avatar is a picture stored on the provider's website conforming to the Personal Avatar conformance requirements described in [2](#2-personal-avatar-conformance-requirements).
 
 **Consumer**
 : The consumer provides the service for the provider to act. The consumer and the provider may be the same.
@@ -75,15 +75,15 @@ A valid Personal Avatar **must** be a 80x80 pixel sized image in GIF ([GIF89a](h
 
 A valid Personal Avatar **must not** exceed the size of 409600 Bit (the octuple size of an uncompressed 80x80pixel big picture with 8-bit color depth).
 
-A valid Personal Avatar **must** be publicly accessible through a valid HTTP URL ([RFC 1738](http://www.faqs.org/rfcs/rfc1738.html)). This URL **must** be used to reference the Personal Avatar (see [Autodiscovery](autodiscovery)).
+A valid Personal Avatar **must** be publicly accessible through a valid HTTP URL ([RFC 1738](http://www.faqs.org/rfcs/rfc1738.html)). This URL **must** be used to reference the Personal Avatar (see [Autodiscovery](#3-autodiscovery)).
 
 The Personal Avatar **must** have the correct `Content-Type` header.
 
 ### 2.b. Refusing Personal Avatar Requests
-The provider **may** restrict access to the Personal Avatar. The provider **must** act accordingly to HTTP, e.g. **should** response with a 403 HTTP status code, if access is denied. It is **recommended** to use the keyword "**none**" of the HTTP-Header `X-Pavatar` as described in [3.a](3). to refuse the delivery of the Personal Avatar completely.
+The provider **may** restrict access to the Personal Avatar. The provider **must** act accordingly to HTTP, e.g. **should** response with a 403 HTTP status code, if access is denied. It is **recommended** to use the keyword "**none**" of the HTTP-Header `X-Pavatar` as described in [3.a](#3a-http-header). to refuse the delivery of the Personal Avatar completely.
 
 ## 3. Autodiscovery
-The URL of the Personal Avatar **must** be offered by the provider in one or more of the following ways to the consumer, the use of [3.a]. and [3.b]. is recommended. The consumer **must** accept all three ways.
+The URL of the Personal Avatar **must** be offered by the provider in one or more of the following ways to the consumer, the use of [3.a](#3a-http-header). and [3.b](#3b-link-element). is recommended. The consumer **must** accept all three ways.
 
 ### 3.a. HTTP Header
 If chosen, a reference to a Personal Avatar must be returned with a X-Pavatar HTTP header, for example:
@@ -124,7 +124,7 @@ If chosen, there **must** be a file named "*pavatar.png*" on the providers serve
 8. EXIT(FAILURE)
 
 ### Precedence
-The HTTP Header ([3.a.](3)) method **must** have the highest precedence, the Direct URL ([3.c](3c)) method the lowest.
+The HTTP Header ([3.a.](#3a-http-header)) method **must** have the highest precedence, the Direct URL ([3.c](#3c-direct-url-the-faviconico-way)) method the lowest.
 
 ## Dealing with Personal Avatars
 The implementation should ensure to use as little traffic as possible to deal with Personal Avatars (e.g., use conditional get HTTP headers like If-Modified-Since).
@@ -151,7 +151,7 @@ The implementation **should** cache **all** Personal Avatars it wants to serve. 
 ### 4.d. Updating Cached Personal Avatars
 The implementation **may** check regularly for changed Personal Avatars using the information given in the `Cache-Control` or `Expires` headers. If the publisher's website doesn't send these headers, it is **recommended** that it checks weekly for changes.
 
-The implementation **should** remember URLs for which the [autodiscovery](#autodiscovery-algorithm) didn't find a Personal Avatar and not check them for changes until the provider posts something new.
+The implementation **should** remember URLs for which the [autodiscovery](#4a-autodiscovery-algorithm) didn't find a Personal Avatar and not check them for changes until the provider posts something new.
 
 ## Appendix
 
